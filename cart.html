@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curt's Furniture Store - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for better aesthetics and separation */
+        .cart-item-separator {
+            height: 1px;
+            background-color: #e5e7eb; /* Light gray line */
+            margin: 24px 0;
+        }
+        .remove-btn {
+            transition: background-color 0.15s ease;
+        }
+        .remove-btn:hover {
+            background-color: #ef4444; /* Darker red on hover */
+        }
+        .cart-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+        .cart-item > div:first-child {
+            display: flex;
+            align-items: flex-start;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .cart-item {
+                flex-direction: row;
+                align-items: center;
+            }
+            .cart-item > div:first-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto; background-color: #fff; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+
+                <h1 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin-bottom: 1.5rem;">Your Shopping Cart</h1>
+
+        <div id="cart-items">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+
+                <div id="empty-cart" style="text-align: center; padding: 2rem 0; display: none;">
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Your cart is empty.</p>
+                    <a href="products.html" class="btn">Continue Shopping</a>
+                </div>
+
+                <!-- Cart Summary -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; display: none;" id="cart-summary">
+                    <span style="font-size: 1.25rem; font-weight: 600; color: #1f2937;">Cart Total:</span>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span id="cart-total" style="font-size: 1.5rem; font-weight: bold; color: #4f46e5;">₱0.00</span>
+                        <button id="clear-cart-btn" style="background-color: #dc2626; color: #fff; font-size: 0.875rem; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer;">Clear Cart</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-top: 1.5rem; display: none;" id="checkout-section">
+                    <a href="products.html" class="btn secondary">Continue Shopping</a>
+                    <a href="checkout.html" class="btn" id="checkout-btn">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

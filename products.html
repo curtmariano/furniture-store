@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Curt's Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-page">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="sofas">Sofas</option>
+                    <option value="tables">Tables</option>
+                    <option value="chairs">Chairs</option>
+                    <option value="beds">Beds</option>
+                    <option value="storage">Storage</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="0-11200">₱0 - ₱11200</option>
+                    <option value="11200-28000">₱11200 - ₱28000</option>
+                    <option value="28000-56000">₱28000 - ₱56000</option>
+                    <option value="56000+">₱56000+</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="">Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating-high">Rating: High to Low</option>
+                    <option value="rating-low">Rating: Low to High</option>
+                </select>
+            </div>
+            <div class="product-grid" id="product-list">
+                <div class="product" data-category="sofas" data-price="27999.99">
+                    <img src="sofa.jpg" alt="Modern Sofa">
+                    <h3>Modern Sofa</h3>
+                    <p>₱27999.99</p>
+                    <a href="product-detail.html?id=1" class="btn">View Details</a>
+                </div>
+                <div class="product" data-category="tables" data-price="16799.99">
+                    <img src="diningtable.jpg" alt="Dining Table">
+                    <h3>Dining Table</h3>
+                    <p>₱16799.99</p>
+                    <a href="product-detail.html?id=2" class="btn">View Details</a>
+                </div>
+                <div class="product" data-category="beds" data-price="44799.99">
+                    <img src="bedroomset.jpg" alt="Bedroom Set">
+                    <h3>Bedroom Set</h3>
+                    <p>₱44799.99</p>
+                    <a href="product-detail.html?id=3" class="btn">View Details</a>
+                </div>
+                <div class="product" data-category="chairs" data-price="8399.99">
+                    <img src="officechair.jpg" alt="Office Chair">
+                    <h3>Office Chair</h3>
+                    <p>₱8399.99</p>
+                    <a href="product-detail.html?id=4" class="btn">View Details</a>
+                </div>
+                <div class="product" data-category="tables" data-price="11199.99">
+                    <img src="coffeetable.jpg" alt="Coffee Table">
+                    <h3>Coffee Table</h3>
+                    <p>₱11199.99</p>
+                    <a href="product-detail.html?id=5" class="btn">View Details</a>
+                </div>
+                <div class="product" data-category="sofas" data-price="22399.99">
+                    <img src="loveseat.jpg" alt="Loveseat">
+                    <h3>Loveseat</h3>
+                    <p>₱22399.99</p>
+                    <a href="product-detail.html?id=6" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

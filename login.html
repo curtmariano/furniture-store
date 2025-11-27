@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Curt's Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="container">
+            <div class="form-container">
+                <h2>Login to Your Account</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" required>
+                            <button type="button" class="password-toggle" data-target="password">👁️</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p><a href="forgotpassword.html">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

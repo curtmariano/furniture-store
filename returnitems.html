@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Items - Curt's Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <div class="container">
+            <h2>Return Items</h2>
+            <form id="return-form">
+                <div class="checkout-content">
+                    <div class="billing-info">
+                        <h3>Return Information</h3>
+                        <div id="order-info">
+                            <!-- Order info will be populated by JavaScript -->
+                        </div>
+                        <div class="form-group">
+                            <label for="return-reason">Reason for Return</label>
+                            <select id="return-reason" name="return-reason" required>
+                                <option value="">Select Reason</option>
+                                <option value="Defective item">Defective item</option>
+                                <option value="Not as described or expected">Not as described or expected</option>
+                                <option value="Wrong item received">Wrong item received</option>
+                                <option value="Poor quality">Poor quality</option>
+                                <option value="Change of mind">Change of mind</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="return-branch">Select Return Branch</label>
+                            <select id="return-branch" name="return-branch" required>
+                                <option value="">Select Branch</option>
+                                <option value="Main Branch - Quezon City">Main Branch - Quezon City</option>
+                                <option value="Novaliches Branch">Novaliches Branch</option>
+                                <option value="San Mateo Rizal Branch">San Mateo Rizal Branch</option>
+                                <option value="Valenzuela Branch">Valenzuela Branch</option>
+                                <option value="Pasay Branch">Pasay Branch</option>
+                                <option value="Dasmarinas Cavite Branch">Dasmarinas Cavite Branch</option>
+                                <option value="San Fernando Pampanga Branch">San Fernando Pampanga Branch</option>
+                                <option value="Gerona Tarlac Branch">Gerona Tarlac Branch</option>
+                                <option value="Bicol Branch">Bicol Branch</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="return-message">Additional Message (Optional)</label>
+                            <textarea id="return-message" name="return-message" rows="3" placeholder="Provide any additional details about your return..."></textarea>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="return-order-items">
+                            <!-- Order items will be populated by JavaScript -->
+                        </div>
+                        <p>Total: ₱<span id="return-order-total">0.00</span></p>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Submit Return Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

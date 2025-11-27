@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Curt's Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="order-detail">
+        <div class="container">
+            <h2>Order Tracking</h2>
+            <div id="order-info">
+                <div class="order-card">
+                    <h3>Order #123456</h3>
+                    <p>Date: [date]</p>
+                    <p>Total: ₱0.00</p>
+                    <p>Payment: Cash on Delivery</p>
+                    <p>Status: Processing</p>
+                    <p>Delivery Address: N/A</p>
+                    <p>Pickup Branch: N/A</p>
+                    <h4>Items:</h4>
+                    <ul></ul>
+                </div>
+            </div>
+            <div id="order-timeline">
+                <h3>Order Processing Timeline</h3>
+                <p>No timeline available.</p>
+            </div>
+            <a href="orders.html" class="btn">Back to Orders</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

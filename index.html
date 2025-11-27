@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curt's Furniture Store - Quality Furniture Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Curt's Furniture Store</h2>
+            <p>Discover quality furniture for your home. From sofas to dining sets, we have everything you need.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="sofa.jpg" alt="Modern Sofa">
+                    <h3>Modern Sofa</h3>
+                    <p>₱27999.99</p>
+                    <a href="product-detail.html?id=1" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" data-id="1" data-name="Modern Sofa" data-price="27999.99">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="diningtable.jpg" alt="Dining Table">
+                    <h3>Dining Table</h3>
+                    <p>₱16799.99</p>
+                    <a href="product-detail.html?id=2" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" data-id="2" data-name="Dining Table" data-price="16799.99">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="bedroomset.jpg" alt="Bedroom Set">
+                    <h3>Bedroom Set</h3>
+                    <p>₱44799.99</p>
+                    <a href="product-detail.html?id=3" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" data-id="3" data-name="Bedroom Set" data-price="44799.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Curt's Furniture Store</h2>
+            <p>Founded in 2025, Curt's Furniture Store has been a trusted name in the furniture industry. We specialize in providing modern, durable, and stylish furniture pieces that cater to every home and office need. Our commitment to quality and customer satisfaction sets us apart.</p>
+        </div>
+    </section>
+
+    <section id="vision-mission" class="about">
+        <div class="container">
+            <h2>Our Vision & Mission</h2>
+            <p><strong>Vision:</strong> To be the leading provider of stylish and affordable furniture, transforming homes into havens of comfort and elegance.</p>
+            <p><strong>Mission:</strong> We are committed to offering high-quality furniture at competitive prices, ensuring customer satisfaction through excellent service and innovative designs.</p>
+        </div>
+    </section>
+
+    <section id="store-directory" class="about">
+        <div class="container">
+            <h2>Store Directory</h2>
+            <p>Explore our wide range of furniture categories:</p>
+            <div class="directory-grid">
+                <div class="directory-item">
+                    <h3>Sofas and Seating</h3>
+                    <p>Comfortable and stylish seating options for your living room.</p>
+                    <a href="products.html" class="btn">Browse Sofas</a>
+                </div>
+                <div class="directory-item">
+                    <h3>Dining Furniture</h3>
+                    <p>Elegant tables and chairs for your dining area.</p>
+                    <a href="products.html" class="btn">Browse Dining</a>
+                </div>
+                <div class="directory-item">
+                    <h3>Bedroom Sets</h3>
+                    <p>Complete bedroom solutions for restful nights.</p>
+                    <a href="products.html" class="btn">Browse Bedrooms</a>
+                </div>
+                <div class="directory-item">
+                    <h3>Office Furniture</h3>
+                    <p>Ergonomic furniture for productive workspaces.</p>
+                    <a href="products.html" class="btn">Browse Office</a>
+                </div>
+                <div class="directory-item">
+                    <h3>Storage Solutions</h3>
+                    <p>Practical storage options to keep your home organized.</p>
+                    <a href="products.html" class="btn">Browse Storage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="store-branches" class="about">
+        <div class="container">
+            <h2>Our Store Branches</h2>
+            <div class="branches">
+                <div class="branch">
+                    <h3>Main Branch - Quezon City</h3>
+                    <p>Address: Barangay Culiat, Quezon City, Philippines</p>
+                    <p>Contact: +63 123 456 7890</p>
+                </div>
+                <div class="branch">
+                    <h3>Novaliches Branch</h3>
+                    <p>Address: Barangay San Bartolome, Novaliches, Quezon City, Philippines</p>
+                    <p>Contact: +63 987 654 3210</p>
+                </div>
+                <div class="branch">
+                    <h3>San Mateo Rizal Branch</h3>
+                    <p>Address: Barangay Ampid I, San Mateo Rizal, Philippines</p>
+                    <p>Contact: +63 555 123 4567</p>
+                </div>
+                <div class="branch">
+                    <h3>Valenzuela Branch</h3>
+                    <p>Address: Malanday, Valenzuela City, Philippines</p>
+                    <p>Contact: +63 111 222 3333</p>
+                </div>
+                <div class="branch">
+                    <h3>Pasay Branch</h3>
+                    <p>Address: SM Mall of Asia, Pasay City, Philippines</p>
+                    <p>Contact: +63 444 555 6666</p>
+                </div>
+                <div class="branch">
+                    <h3>Dasmarinas Cavite Branch</h3>
+                    <p>Address: Barangay Burol, Dasmarinas Cavite, Philippines</p>
+                    <p>Contact: +63 777 888 9999</p>
+                </div>
+                <div class="branch">
+                    <h3>San Fernando Pampanga Branch</h3>
+                    <p>Address: Barangay Sindalan, San Fernando Pampanga, Philippines</p>
+                    <p>Contact: +63 000 111 2222</p>
+                </div>
+                <div class="branch">
+                    <h3>Gerona Tarlac Branch</h3>
+                    <p>Address: Barangay Pinasling, Gerona Tarlac, Philippines</p>
+                    <p>Contact: +63 333 444 5555</p>
+                </div>
+                <div class="branch">
+                    <h3>Bicol Branch</h3>
+                    <p>Address: Triangulo, Naga City Camarines Sur, Philippines</p>
+                    <p>Contact: +63 666 777 8888</p>
+                </div>
+                <div class="branch coming-soon">
+                    <h3>Cainta Rizal Branch - Coming Soon</h3>
+                    <p>Address: Coming Soon</p>
+                    <p>Contact: Coming Soon</p>
+                </div>
+                <div class="branch coming-soon">
+                    <h3>Cubao Quezon City Branch - Coming Soon</h3>
+                    <p>Address: Coming Soon</p>
+                    <p>Contact: Coming Soon</p>
+                </div>
+                <div class="branch coming-soon">
+                    <h3>Baguio City Branch - Coming Soon</h3>
+                    <p>Address: Coming Soon</p>
+                    <p>Contact: Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="about">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or support.</p>
+            <p>Email: info@curtsfurniture.com</p>
+            <p>Phone: +63 123 456 7890</p>
+            <p>Address: Barangay Culiat, Quezon City, Philippines (Main Branch)</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

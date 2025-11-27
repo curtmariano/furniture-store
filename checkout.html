@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Curt's Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="logo.jpg" alt="Curt's Furniture Store" style="height: 60px;"></a></h1>
+            <div class="header-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search furniture..." id="search-input">
+                    <button type="submit">Search</button>
+                </form>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                        <li id="auth-link"><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <form action="checkout-success.html" method="post">
+                <div class="checkout-content">
+                    <div class="billing-info">
+                        <h3>Delivery Information</h3>
+                        <div id="user-info">
+                            <!-- User info will be populated by JavaScript -->
+                        </div>
+                        <div class="form-group">
+                            <label for="selected-address">Select Delivery Address</label>
+                            <select id="selected-address" name="selected-address" required>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="selected-branch">Select Pickup Branch (Optional)</label>
+                            <select id="selected-branch" name="selected-branch">
+                                <option value="">No pickup - Delivery only</option>
+                                <!-- Branch options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="order-items">
+                            <!-- Order items will be populated by JavaScript -->
+                        </div>
+                        <p>Total: ₱<span id="order-total">0.00</span></p>
+                    </div>
+                </div>
+                <div class="payment-section">
+                    <div class="payment-method">
+                        <h3>Payment Method</h3>
+                        <div class="form-group">
+                            <label><input type="radio" name="payment-method" value="card" checked> Credit/Debit Card</label><br>
+                            <label><input type="radio" name="payment-method" value="gcash"> GCash</label><br>
+                            <label><input type="radio" name="payment-method" value="cod"> Cash on Delivery</label>
+                        </div>
+                    </div>
+                    <div class="payment-info" id="card-fields">
+                        <h3>Card Information</h3>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" required>
+                        </div>
+                    </div>
+                    <div class="payment-info" id="gcash-fields" style="display: none;">
+                        <h3>GCash Information</h3>
+                        <div class="form-group">
+                            <label for="gcash-number">GCash Number</label>
+                            <input type="text" id="gcash-number" name="gcash-number" placeholder="09XXXXXXXXX" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curt's Furniture Store. All rights reserved.</p>
+            <p>Contact: info@curtsfurniture.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
